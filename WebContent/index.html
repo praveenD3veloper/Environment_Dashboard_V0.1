@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float : right;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+<title>DashBoard</title>
+</head>
+<script src=./service.js></script>
+<body onLoad="initialLoad()">
+     <!--     <form name="dashboard"  action="./fetchresponse" method="get">
+        <input type="text" name="q"/>
+    <input type="submit" name="button" value="click me" />
+  </form>-->
+  
+  <div class="row">
+  	<div id="DT01" class="column" style="background-color : #ccc">
+  		<h2>DT01</h2>
+  	</div>
+  	<div id="DT02" class="column" style="background-color : #bbb">
+  		<h2>DT02</h2>
+  	</div>
+  	<div id="DT03" class="column" style="background-color : #aaa">
+  		<h2>DT03</h2>
+  	</div>
+  <div class="row">
+  	<div id="NFT" class="column" style="background-color : #ccc">
+  		<h2>NFT</h2>
+  	</div>
+  	<div id="SIT01" class="column" style="background-color : #bbb">
+  		<h2>SIT01</h2>
+  	</div>
+  	<div id="ST01" class="column" style="background-color : #aaa">
+  		<h2>ST01</h2>
+  	</div>
+  </div>
+  </div>
+</body>
+</html>
